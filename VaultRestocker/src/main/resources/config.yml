@@ -1,0 +1,9 @@
+# How often vaults are restocked, in seconds
+interval-seconds: 30
+
+# Worlds to process. Leave empty to process all worlds.
+worlds: []
+
+# true  = only scan chunks around players
+# false = scan every loaded chunk
+only-near-players: false

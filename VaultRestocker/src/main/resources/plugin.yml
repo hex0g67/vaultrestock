@@ -1,0 +1,14 @@
+name: VaultRestocker
+version: '${project.version}'
+main: com.example.vaultrestocker.VaultRestocker
+api-version: '26.3'
+description: Restocks trial chamber vaults on a timer.
+commands:
+  vaultrestock:
+    description: Restock vaults now or reload the config.
+    usage: /vaultrestock <now|reload>
+    permission: vaultrestocker.admin
+permissions:
+  vaultrestocker.admin:
+    description: Allows use of /vaultrestock
+    default: op
