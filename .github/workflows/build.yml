@@ -12,7 +12,8 @@ jobs:
           distribution: temurin
           java-version: '25'
       - run: mvn -B clean package
+        working-directory: VaultRestocker
       - uses: actions/upload-artifact@v4
         with:
           name: VaultRestocker-jar
-          path: target/VaultRestocker-*.jar
+          path: VaultRestocker/target/VaultRestocker-*.jar
